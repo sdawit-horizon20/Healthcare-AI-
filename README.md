@@ -1,31 +1,17 @@
-# 🏥 Healthcare AI Prototype
+# Healthcare AI
 
-A state-of-the-art **Healthcare AI prototype** that provides **general medical information** through an AI-powered chat interface.  
-⚠️ This system is **not a medical diagnosis or treatment tool**.
+Premium AI chat platform for healthcare questions with a professional SaaS UI.
 
----
+## Features
+- Modern dashboard & homepage
+- Telebirr payment integration (mocked for demo)
+- File uploads (lab reports/images)
+- Per-user conversation memory
+- Downloadable chat transcripts
+- Fully deployable on Render
 
-## 🌟 Features
-
-- 🤖 AI-powered health information chat
-- 🧠 Safety layer to detect medical emergencies
-- ⚠️ Automatic medical disclaimer
-- 💬 Chat-style UI (Gradio)
-- 🔐 Environment-based API key management
-- 🚀 Cloud-ready deployment (Render)
-
----
-
-## 🧱 Tech Stack
-
-- **Backend:** FastAPI
-- **AI Model:** OpenAI (GPT-4o-mini or compatible)
-- **Frontend UI:** Gradio
-- **Container:** Docker
-- **Deployment:** Render
-- **Language:** Python 3.11
-
----
-
-## 📁 Project Structure
-healthcare-ai/ ├── app/ │   ├── main.py │   ├── config.py │   ├── ui.py │   ├── routers/ │   │   └── chat.py │   └── services/ │       ├── ai_service.py │       ├── safety.py │       └── billing.py ├── requirements.txt ├── Dockerfile └── README.md
+## Deployment
+1. Push repository to GitHub.
+2. Add environment variable `OPENAI_API_KEY` on Render.
+3. Start command: `python app.py`
+4. Environment: Python 3.10+
