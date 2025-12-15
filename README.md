@@ -28,3 +28,4 @@ A state-of-the-art **Healthcare AI prototype** that provides **general medical i
 ---
 
 ## 📁 Project Structure
+healthcare-ai/ ├── app/ │   ├── main.py │   ├── config.py │   ├── ui.py │   ├── routers/ │   │   └── chat.py │   └── services/ │       ├── ai_service.py │       ├── safety.py │       └── billing.py ├── requirements.txt ├── Dockerfile └── README.md
