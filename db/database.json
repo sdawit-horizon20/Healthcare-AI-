@@ -1,12 +1,18 @@
 {
-    "users": {
-        "user123": {
-            "paid": true,
-            "tier": "premium",
-            "conversation": [
-                {"role": "user", "content": "Hello"},
-                {"role": "assistant", "content": "Hi! How can I help?"}
-            ]
+  "users": {
+    "example_user": {
+      "paid": false,
+      "tier": "free",
+      "conversation": [
+        {
+          "role": "user",
+          "content": "Hello, I want to test the Healthcare AI."
+        },
+        {
+          "role": "assistant",
+          "content": "Hi! I am your Healthcare AI assistant. How can I help you today?"
         }
+      ]
     }
+  }
 }
