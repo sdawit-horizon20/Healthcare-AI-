@@ -1,18 +1,75 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
 
-# Other files and folders
-.settings/
+# ===============================
+# Virtual Environments
+# ===============================
+venv/
+env/
+ENV/
+.venv/
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# ===============================
+# Environment Variables
+# ===============================
+.env
+.env.*
+*.env
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# ===============================
+# Logs
+# ===============================
+*.log
+logs/
+
+# ===============================
+# OS Files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# IDE / Editor
+# ===============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===============================
+# Jupyter
+# ===============================
+.ipynb_checkpoints/
+
+# ===============================
+# Gradio
+# ===============================
+gradio_cached_examples/
+
+# ===============================
+# Docker
+# ===============================
+*.pid
+
+# ===============================
+# Test / Coverage
+# ===============================
+.coverage
+htmlcov/
+.tox/
+
+# ===============================
+# Temporary Files
+# ===============================
+tmp/
+temp/
