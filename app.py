@@ -49,7 +49,6 @@ def download_history(user_id):
 # Gradio SaaS UI
 with gr.Blocks(css=open("static/style.css").read()) as demo:
 
-    # Homepage / Welcome
     with gr.Column():
         gr.Image("assets/logo.png", elem_id="logo", interactive=False)
         gr.Markdown("<h1>☕️ Welcome to Healthcare AI</h1>")
@@ -66,7 +65,6 @@ with gr.Blocks(css=open("static/style.css").read()) as demo:
 
     gr.Markdown("---")
 
-    # Payment & Chat
     with gr.Row():
         with gr.Column(scale=1):
             gr.Markdown("### 💰 Payment Section")
@@ -81,7 +79,6 @@ with gr.Blocks(css=open("static/style.css").read()) as demo:
             chat_output = gr.Textbox(label="AI Response", interactive=False)
             chat_button = gr.Button("Send", variant="primary")
 
-    # Download history
     gr.Markdown("### 📄 Download Chat History")
     download_button = gr.Button("Download History", variant="secondary")
     download_output = gr.Textbox(label="History", interactive=False)
@@ -91,8 +88,9 @@ with gr.Blocks(css=open("static/style.css").read()) as demo:
     chat_button.click(fn=healthcare_chat, inputs=[user_id_input, chat_user_input, chat_file_upload], outputs=chat_output)
     download_button.click(fn=download_history, inputs=user_id_input, outputs=download_output)
 
+# Use Render's PORT if available
 demo.launch(
     server_name="0.0.0.0",
     server_port=int(os.environ.get("PORT", 7860)),
     share=False
-    )
+)
