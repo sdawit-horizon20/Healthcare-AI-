@@ -9,4 +9,4 @@ COPY . .
 
 ENV PYTHONPATH=/app
 
-CMD ["python", "app/ui.py"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "10000"]
