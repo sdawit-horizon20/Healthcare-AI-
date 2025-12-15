@@ -1,0 +1,12 @@
+{
+    "users": {
+        "user123": {
+            "paid": true,
+            "tier": "premium",
+            "conversation": [
+                {"role": "user", "content": "Hello"},
+                {"role": "assistant", "content": "Hi! How can I help?"}
+            ]
+        }
+    }
+}
